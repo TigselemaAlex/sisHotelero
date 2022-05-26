@@ -1,0 +1,8 @@
+<p-dialog header="Descargas" [(visible)]="displayModal" [modal]="true" position="bottom-left" (onHide)="hide()"
+  [draggable]="false">
+  <p-listbox [options]="options" [(ngModel)]="selected" [style]="{'width':'300px'}" (onClick)="download()">
+  </p-listbox>
+  <ng-template pTemplate="footer">
+
+  </ng-template>
+</p-dialog>

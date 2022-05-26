@@ -1,0 +1,16 @@
+<res-title></res-title>
+<res-container>
+  <res-table [data]="data" [cols]="cols" (onDelete)="delete($event)" (onAction)="action($event)">
+
+  </res-table>
+  <p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000" rejectButtonStyleClass="p-button-text"
+    [transitionOptions]="'120ms'">
+  </p-confirmDialog>
+  <p-toast position="bottom-right"></p-toast>
+
+</res-container>
+<div *ngIf="displayModalExports">
+  <res-download [display]="displayModalExports" (onHideModal)="showModalExport($event)" [data]="data" [cols]="cols"
+    fileName="clientes">
+  </res-download>
+</div>

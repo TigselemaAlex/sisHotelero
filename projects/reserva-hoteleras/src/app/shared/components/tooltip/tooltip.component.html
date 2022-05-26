@@ -1,0 +1,10 @@
+<p-toolbar styleClass="mb-2">
+  <ng-template pTemplate="left">
+    <button pButton pRipple label="Exportar" icon="pi pi-upload" class="p-button-raised p-button-help"
+      (click)="action('export')"></button>
+  </ng-template>
+  <ng-template pTemplate="right">
+    <button pButton pRipple label="Nuevo" icon="pi pi-plus" class="p-button-raised p-button-success"
+      (click)="action('new')"></button>
+  </ng-template>
+</p-toolbar>

@@ -1,0 +1,41 @@
+<p-card header="Registro" [style]="{width: '25rem', 'margin-bottom': '2em', color: 'var(--color-20)'}"
+  styleClass="p-card-shadow">
+
+  <form autocomplete="off">
+    <div class="field col-12">
+      <div class="p-float-label ">
+        <input type="email" id="email" pInputText>
+        <label for="email">Ingrese el email</label>
+      </div>
+    </div>
+
+    <div class="field col-12">
+      <div class="p-float-label ">
+        <input type="text" id="username" pInputText>
+        <label for="username">Ingrese el usuario</label>
+      </div>
+    </div>
+    <div class="field col-12">
+      <div class="p-float-label">
+        <input type="{{passwordHide ? 'password': 'text'}}" id="password" pPassword>
+        <button pButton pRipple type="button" icon="pi {{passwordHide ? 'pi-lock': 'pi-unlock'}} "
+          class="p-button-rounded p-button-secondary p-button-text input-password-form"
+          (click)="showPassword()"></button>
+        <label for="password">Ingrese su contraseña</label>
+      </div>
+    </div>
+    <div class="field col-12">
+      <div class="p-float-label ">
+        <input type="password" id="password-re" pInputText>
+        <label for="password-re">Repita la contraseña</label>
+      </div>
+    </div>
+    <div class="flex justify-content-between">
+      <button pButton pRipple type="button" label="Atras" class="w-9rem p-button-rounded p-button-secondary"
+        (click)=" showRegister()"></button>
+      <button pButton pRipple type="button" label="Registrarse" class="w-9rem p-button-rounded p-button-help"></button>
+    </div>
+
+  </form>
+
+</p-card>

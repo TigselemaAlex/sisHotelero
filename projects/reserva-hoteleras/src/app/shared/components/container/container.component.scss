@@ -1,0 +1,9 @@
+:host ::ng-deep .p-card {
+  max-height: 490px;
+  height: 490px;
+  width: 100%;
+
+  .p-card-content {
+    padding: 0;
+  }
+}

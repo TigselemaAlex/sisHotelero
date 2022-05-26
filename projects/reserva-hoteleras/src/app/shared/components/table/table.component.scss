@@ -1,0 +1,19 @@
+:host ::ng-deep .p-button-rounded,
+.p-button {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+
+  .pi {
+    font-size: .8rem;
+  }
+}
+
+:host ::ng-deep .p-button.p-button-icon-only.p-button-rounded {
+  width: 2rem;
+  height: 2rem;
+}
+
+:host ::ng-deep .p-datatable .p-datatable-tbody>tr>td {
+  padding: .6rem .6rem;
+}

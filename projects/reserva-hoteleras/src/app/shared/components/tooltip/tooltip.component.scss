@@ -1,0 +1,15 @@
+:host {
+  ::ng-deep {
+
+    .p-toolbar {
+      height: 4rem;
+      flex-wrap: nowrap;
+
+
+      .p-button {
+        height: 2.5rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
